@@ -1,0 +1,98 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+	color: #000;
+}
+.person {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 32px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.person__info {
+	width: 50%;
+}
+.person__contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+.person__details {
+	width: 100%;
+}
+.avatar {
+	padding-right: 32px;
+	padding-bottom: 32px;
+}
+.avatar__picture {
+	border-width: 32px;
+	border-style: solid;
+	border-color: #FFF;
+	border-radius: 50%;
+}
+.contacts {
+	padding-bottom: 30px;
+}
+.contacts__name {
+	font-size: 32px;
+	font-weight: bold;
+}
+.contacts__role {
+	font-size: 19.2px;
+	font-weight: bold;
+	padding-bottom: 32px;
+}
+.contacts__item {
+	font-style: italic;
+}
+.contacts__title {
+	font-weight: bold;
+}
+.contacts__title:after {
+	content: ":";
+}
+.contacts__link {
+	color: gray;
+}
+.paragraph {
+	padding-bottom: 16px;
+}
+.paragraph_last {
+	padding-bottom: 48px;
+}
+
+@media (max-width: 1400px) {
+	.avatar__picture {
+		border-width: calc(1px + (32 — 1) * ((100vw — 500px) / (1600 — 500)));
+	}
+}	
+
+@media (max-width: 1025px) {
+	.person {
+		width: 80%;
+		flex-direction: column;
+	}
+	.person__info {
+		width: 100%;
+	}
+	.avatar {
+		padding-right: 0px;
+	}
+	.avatar__picture {
+		margin: 0 auto;
+	}
+	.person__contacts {
+		width: 100%;
+	}
+	.contacts__name {
+		text-align: center;
+	}
+	.contacts__role {
+		text-align: center;
+	}
+}
