@@ -8,6 +8,8 @@ html {
 }
 .person {
 	width: 60%;
+	min-width: 380px;
+	max-width: 880px;
 	margin: 0 auto;
 	padding-top: 32px;
 	display: flex;
@@ -194,7 +196,7 @@ html {
 	animation-delay: 3s, 1.5s
 }
 .demo {
-font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color:#fff;
 	display: block;
 	margin: 0 auto;
@@ -202,6 +204,6 @@ font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 .demo a{
-font-family: 'Raleway', sans-serif;
-color: #000;		
+	font-family: 'Raleway', sans-serif;
+	color: #000;		
 }
