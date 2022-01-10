@@ -36,6 +36,11 @@ html {
 	border-style: solid;
 	border-color: #FFF;
 	border-radius: 50%;
+	transition: 1s;
+}
+.avatar__picture:hover {
+	transform: rotate(180deg);
+	transition: 1s;
 }
 .contacts {
 	padding-bottom: 30px;
