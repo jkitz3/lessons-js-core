@@ -73,36 +73,6 @@ html {
 	padding-bottom: 48px;
 }
 
-@media (max-width: 1400px) {
-	.avatar__picture {
-		border-width: calc(1px + (32 — 1) * ((100vw — 500px) / (1600 — 500)));
-	}
-}	
-
-@media (max-width: 1025px) {
-	.person {
-		width: 80%;
-		flex-direction: column;
-	}
-	.person__info {
-		width: 100%;
-	}
-	.avatar {
-		padding-right: 0px;
-	}
-	.avatar__picture {
-		margin: 0 auto;
-	}
-	.person__contacts {
-		width: 100%;
-	}
-	.contacts__name {
-		text-align: center;
-	}
-	.contacts__role {
-		text-align: center;
-	}
-}
 .snowflake {
 	color: #fff;
 	font-size: 1em;
@@ -208,7 +178,84 @@ html {
 	padding: 15px 0;
 	text-align: center;
 }
-.demo a{
+.demo a {
 	font-family: 'Raleway', sans-serif;
 	color: #000;		
+}
+.wrapper {
+	height: 100vh;
+}
+h1 {
+	font-size: 10rem;
+	color: rgb(185, 2, 63);
+}
+.overlay {
+	display: flex;
+	height: 100vh;
+	position: relative;
+}
+.overlay__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	background: url(./front-end.jpg) no-repeat center;
+	background-size: cover;
+	z-index: 3;
+}
+.overlay__background {
+	width: 2%;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+	background: url(./worlds.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: 2s linear;
+}
+.overlay__background:hover {
+	transition: 0s linear;
+	opacity: 0;
+}
+
+@media (max-width: 1400px) {
+	.avatar__picture {
+		border-width: calc(1px + (32 — 1) * ((100vw — 500px) / (1600 — 500)));
+	}
+	h1 {
+		font-size: 8rem;
+	}
+}	
+
+@media (max-width: 1025px) {
+	.person {
+		width: 80%;
+		flex-direction: column;
+	}
+	.person__info {
+		width: 100%;
+	}
+	.avatar {
+		padding-right: 0px;
+	}
+	.avatar__picture {
+		margin: 0 auto;
+	}
+	.person__contacts {
+		width: 100%;
+	}
+	.contacts__name {
+		text-align: center;
+	}
+	.contacts__role {
+		text-align: center;
+	}
+	h1 {
+		font-size: 5rem;
+	}
 }
